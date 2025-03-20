@@ -1,22 +1,229 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goonware - Custom Media Display Software</title>
-    <meta name="description" content="Goonware is a powerful application for displaying images, animated GIFs, and videos across multiple monitors with customizable settings." />
-    <meta name="author" content="Goonware Team" />
-    <meta property="og:image" content="./og-image.png" />
-    <meta property="og:title" content="Goonware - Custom Media Display Software" />
-    <meta property="og:description" content="Goonware is a powerful application for displaying images, animated GIFs, and videos across multiple monitors with customizable settings." />
-    <link rel="icon" href="./lovable-uploads/513106cb-cf3c-41f7-93a8-edbda54a764f.png" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOONWARE</title>
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="config.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/icon.png" alt="Goonware Logo" class="logo">
+                <div class="title">
+                    <h1>GOONWARE</h1>
+                </div>
+            </div>
+            <div class="download-btn">
+                <a href="#download" class="btn btn-primary">Download Now</a>
+            </div>
+        </div>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="./src/main.tsx"></script>
-  </body>
-</html>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Advanced Media Display</h2>
+                    <p>Handle images, videos, and audio files in a streamlined interface</p>
+                    <a href="#download" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="glow-effect"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>GMODEL Viewer</h3>
+                        <ul>
+                            <li>Clean, dark-themed interface</li>
+                            <li>Interactive file browser with preview</li>
+                            <li>Support for images, GIFs, videos, and text</li>
+                            <li>Intuitive media controls</li>
+                            <li>File information display</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>Media Display</h3>
+                        <ul>
+                            <li>Multi-monitor support</li>
+                            <li>Intelligent content distribution</li>
+                            <li>Transparent PNG support</li>
+                            <li>High-quality animation playback</li>
+                            <li>Video playback with audio</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h3>Customization</h3>
+                        <ul>
+                            <li>Configurable display settings</li>
+                            <li>Theme and appearance options</li>
+                            <li>Media playback preferences</li>
+                            <li>Performance optimization settings</li>
+                            <li>Keyboard shortcut customization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="usage">
+            <div class="container">
+                <h2 class="section-title">Getting Started</h2>
+                <div class="usage-grid">
+                    <div class="usage-card">
+                        <h3><i class="fas fa-file-alt"></i> Viewing GMODEL Files</h3>
+                        <ol>
+                            <li>Double-click any <code>.gmodel</code> file</li>
+                            <li>Use the file browser to navigate contents</li>
+                            <li>Click any file to preview it</li>
+                            <li>Use controls for media playback</li>
+                            <li>View file information in the panel</li>
+                        </ol>
+                    </div>
+
+                    <div class="usage-card">
+                        <h3><i class="fas fa-cog"></i> Advanced Configuration</h3>
+                        <ol>
+                            <li>Access the settings panel</li>
+                            <li>Customize appearance and behaviors</li>
+                            <li>Configure playback settings</li>
+                            <li>Set up auto-save preferences</li>
+                        </ol>
+                    </div>
+
+                    <div class="usage-card">
+                        <h3><i class="fas fa-play"></i> Media Display Mode</h3>
+                        <ol>
+                            <li>Launch via <code>GOONWARE.lnk</code></li>
+                            <li>Add model files to the models folder</li>
+                            <li>Configure display preferences</li>
+                            <li>Select monitors for display</li>
+                            <li>Click "Start" to begin</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <div class="container">
+                <h2 class="section-title">Download Latest Release</h2>
+                <div class="download-card">
+                    <div class="download-info">
+                        <h3>GOONWARE v1.0.0</h3>
+                        <p>Released: May 2023</p>
+                        <ul>
+                            <li>Full GMODEL viewer functionality</li>
+                            <li>Media display across multiple monitors</li>
+                            <li>Includes convenient GOONWARE.lnk launcher</li>
+                            <li>Windows 10/11 compatible</li>
+                        </ul>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="https://github.com/yourusername/goonware/releases/latest/download/goonware-setup.exe" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download Installer (64-bit)
+                        </a>
+                        <a href="https://github.com/yourusername/goonware/releases" class="btn btn-text">
+                            View All Releases
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="system-requirements">
+            <div class="container">
+                <h2 class="section-title">System Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Operating System</h3>
+                        <p>Windows 10/11</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Runtime</h3>
+                        <p>Python 3.8+</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-memory"></i>
+                        <h3>Memory</h3>
+                        <p>4GB RAM recommended</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Graphics</h3>
+                        <p>Basic video acceleration</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-hdd"></i>
+                        <h3>Storage</h3>
+                        <p>500MB free space</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Network</h3>
+                        <p>Internet connection for updates</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-display"></i>
+                        <h3>Display</h3>
+                        <p>1280x720 minimum resolution</p>
+                    </div>
+                    <div class="requirement-item">
+                        <i class="fas fa-plug"></i>
+                        <h3>Additional</h3>
+                        <p>USB port for external media</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/icon.png" alt="Goonware Logo" class="small-logo">
+                    <span>GOONWARE</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername/goonware"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://github.com/yourusername/goonware/issues"><i class="fas fa-bug"></i> Report Issue</a>
+                    <a href="https://github.com/yourusername/goonware/wiki"><i class="fas fa-book"></i> Documentation</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 GOONWARE. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
