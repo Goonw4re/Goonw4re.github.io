@@ -9,18 +9,18 @@ const CONFIG = {
     // Download links
     downloads: {
         latest: {
-            installer: "https://github.com/yourusername/goonware/releases/latest/download/goonware-setup.exe",
+            installer: "https://github.com/Goonw4re/goonware/releases/latest",
             version: "1.0.0",
-            releaseDate: "May 2023"
+            releaseDate: "March 2025"
         },
-        allReleases: "https://github.com/yourusername/goonware/releases"
+        allReleases: "https://github.com/Goonw4re/goonware/releases"
     },
     
     // GitHub repository links
     repository: {
-        main: "https://github.com/yourusername/goonware",
-        issues: "https://github.com/yourusername/goonware/issues",
-        wiki: "https://github.com/yourusername/goonware/wiki"
+        main: "https://github.com/Goonw4re/goonware",
+        issues: "https://github.com/Goonw4re/goonware/issues",
+        wiki: "https://github.com/Goonw4re/goonware/wiki"
     },
     
     // Social media links
